@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>E_Invoice_API.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\NewFolder\**" />
+    <EmbeddedResource Remove="Interfaces\NewFolder\**" />
+    <None Remove="Interfaces\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FluentValidation" Version="10.1.0" />
+    <PackageReference Include="MailKit" Version="2.12.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.6" />
+    <PackageReference Include="MimeKit" Version="2.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E-Invoice API.Common\E-Invoice API.Common.csproj" />
+    <ProjectReference Include="..\E-Invoice API.Data\E-Invoice API.Data.csproj" />
+  </ItemGroup>
+
+</Project>
